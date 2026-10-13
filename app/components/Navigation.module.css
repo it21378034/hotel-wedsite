@@ -643,12 +643,50 @@
     display: none;
   }
 
+  .navContainer {
+    height: 60px;
+    padding: 0 1rem;
+  }
+
+  .logo {
+    gap: 0.5rem;
+  }
+
+  .logoIcon {
+    width: 36px;
+    height: 36px;
+  }
+
+  .crestMonogram {
+    font-size: 1rem;
+  }
+
+  .logoName {
+    font-size: 1.05rem;
+  }
+
   .logoTagline {
     display: none;
   }
 
+  .navActions {
+    gap: 0.5rem;
+  }
+
   .bookCtaBtn {
-    padding: 0.45rem 0.85rem;
-    font-size: 0.78rem;
+    padding: 0.4rem 0.75rem;
+    font-size: 0.75rem;
+    letter-spacing: 0.02em;
+  }
+}
+
+@media (max-width: 380px) {
+  .logoName {
+    font-size: 0.92rem;
+  }
+
+  .bookCtaBtn {
+    padding: 0.35rem 0.6rem;
+    font-size: 0.7rem;
   }
 }

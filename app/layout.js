@@ -16,6 +16,13 @@ import Script from 'next/script';
 const GA_ID = 'G-XXXXXXXXXX'; // Replace with real GA4 ID
 const GTM_ID = 'GTM-XXXXXXX'; // Replace with real GTM ID
 
+export const viewport = {
+  width: 'device-width',
+  initialScale: 1,
+  maximumScale: 5,
+  themeColor: '#1a1a2e',
+};
+
 export const metadata = {
   metadataBase: new URL('https://www.thegrandpavilion.lk'),
   title: {
