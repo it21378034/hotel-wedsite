@@ -644,25 +644,36 @@
   }
 
   .navContainer {
-    height: 60px;
+    height: 64px;
     padding: 0 1rem;
+    gap: 0.75rem;
   }
 
   .logo {
-    gap: 0.5rem;
+    gap: 0.65rem;
+    flex: 1;
+    min-width: 0;
   }
 
   .logoIcon {
-    width: 36px;
-    height: 36px;
+    width: 38px;
+    height: 38px;
+    flex-shrink: 0;
   }
 
   .crestMonogram {
-    font-size: 1rem;
+    font-size: 1.05rem;
+  }
+
+  .logoText {
+    min-width: 0;
   }
 
   .logoName {
-    font-size: 1.05rem;
+    font-size: 1.1rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
   }
 
   .logoTagline {
@@ -670,23 +681,23 @@
   }
 
   .navActions {
-    gap: 0.5rem;
+    flex-shrink: 0;
+    margin-left: auto;
   }
 
+  /* Hide Book Now button in top bar on mobile — the hamburger drawer and homepage hero provide large, easy touch targets */
   .bookCtaBtn {
-    padding: 0.4rem 0.75rem;
-    font-size: 0.75rem;
-    letter-spacing: 0.02em;
+    display: none;
+  }
+
+  .hamburgerBtn {
+    width: 42px;
+    height: 42px;
   }
 }
 
 @media (max-width: 380px) {
   .logoName {
-    font-size: 0.92rem;
-  }
-
-  .bookCtaBtn {
-    padding: 0.35rem 0.6rem;
-    font-size: 0.7rem;
+    font-size: 0.98rem;
   }
 }
