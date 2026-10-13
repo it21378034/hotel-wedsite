@@ -1,0 +1,345 @@
+.roomHero {
+  position: relative;
+  min-height: 55vh;
+  display: flex;
+  align-items: flex-end;
+  color: var(--color-white);
+  padding: 8rem 1.5rem 4rem;
+  overflow: hidden;
+}
+
+.heroImgWrapper {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+}
+
+.heroImg {
+  object-fit: cover;
+  object-position: center;
+}
+
+.heroOverlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(26, 26, 46, 0.4) 0%, rgba(26, 26, 46, 0.9) 100%);
+}
+
+.heroContent {
+  position: relative;
+  z-index: 1;
+}
+
+.breadcrumbs {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.85rem;
+  color: rgba(255, 255, 255, 0.7);
+  margin-bottom: 1rem;
+}
+
+.breadcrumbs a {
+  color: #E2B98A;
+}
+
+.roomTitle {
+  font-size: clamp(2.5rem, 4.5vw, 3.75rem);
+  font-family: var(--font-serif);
+  margin: 0.75rem 0;
+  color: var(--color-white);
+}
+
+.roomSubtitle {
+  font-size: 1.15rem;
+  color: rgba(255, 255, 255, 0.85);
+  max-width: 650px;
+}
+
+.detailSection {
+  background-color: var(--color-surface);
+}
+
+.detailGrid {
+  display: grid;
+  grid-template-columns: 1fr 380px;
+  gap: 3.5rem;
+  align-items: flex-start;
+  margin-bottom: 5rem;
+}
+
+.leftCol {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.specsStrip {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+  background-color: var(--color-white);
+  padding: 1.5rem;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--color-border);
+  box-shadow: var(--shadow-sm);
+}
+
+.specBox {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  text-align: center;
+}
+
+.specIcon {
+  font-size: 1.5rem;
+}
+
+.specLabel {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  color: var(--color-text-light);
+  letter-spacing: 0.05em;
+}
+
+.specBox strong {
+  font-size: 0.95rem;
+  color: var(--color-primary);
+}
+
+.sectionBlock {
+  background-color: var(--color-white);
+  padding: 2.25rem;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--color-border);
+  box-shadow: var(--shadow-sm);
+}
+
+.blockTitle {
+  font-size: 1.6rem;
+  font-family: var(--font-serif);
+  color: var(--color-primary);
+  margin-bottom: 1.25rem;
+  border-bottom: 1px solid var(--color-border);
+  padding-bottom: 0.75rem;
+}
+
+.descriptionText {
+  color: var(--color-text);
+  line-height: 1.85;
+  font-size: 1.02rem;
+}
+
+.galleryGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.25rem;
+}
+
+.galleryItem {
+  position: relative;
+  height: 220px;
+  border-radius: var(--radius-sm);
+  overflow: hidden;
+}
+
+.galleryImg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform var(--transition-normal);
+}
+
+.galleryItem:hover .galleryImg {
+  transform: scale(1.05);
+}
+
+.amenitiesChecklist {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1rem;
+}
+
+.checkItem {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  color: var(--color-text);
+  font-size: 0.95rem;
+}
+
+.checkIcon {
+  color: var(--color-secondary);
+  font-weight: 700;
+  background-color: rgba(22, 66, 60, 0.1);
+  width: 24px;
+  height: 24px;
+  border-radius: var(--radius-full);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.policiesGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.25rem;
+  font-size: 0.95rem;
+  color: var(--color-text-light);
+}
+
+.policiesGrid strong {
+  color: var(--color-primary);
+}
+
+/* Sticky Booking Card */
+.stickyBookingCard {
+  position: sticky;
+  top: 100px;
+  background-color: var(--color-white);
+  padding: 2.25rem;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--color-border);
+  box-shadow: var(--shadow-md);
+}
+
+.bookingCardHeader {
+  border-bottom: 1px solid var(--color-border);
+  padding-bottom: 1.25rem;
+  margin-bottom: 1.5rem;
+}
+
+.fromLabel {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  color: var(--color-text-light);
+  letter-spacing: 0.05em;
+}
+
+.priceDisplay {
+  display: flex;
+  align-items: baseline;
+  gap: 0.5rem;
+  margin: 0.25rem 0;
+}
+
+.priceDisplay strong {
+  font-size: 2.25rem;
+  font-family: var(--font-serif);
+  color: var(--color-primary);
+}
+
+.priceDisplay span {
+  font-size: 0.85rem;
+  color: var(--color-text-light);
+}
+
+.guaranteeTag {
+  font-size: 0.82rem;
+  color: var(--color-secondary);
+  font-weight: 600;
+}
+
+.cardFeaturesList {
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+  margin-bottom: 1.75rem;
+}
+
+.cardFeature {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  font-size: 0.88rem;
+  color: var(--color-text);
+}
+
+.contactHelp {
+  margin-top: 1.5rem;
+  padding-top: 1.25rem;
+  border-top: 1px solid var(--color-border);
+  text-align: center;
+  font-size: 0.85rem;
+  color: var(--color-text-light);
+  display: flex;
+  flex-direction: column;
+}
+
+.contactHelp strong {
+  color: var(--color-primary);
+  margin-top: 0.25rem;
+}
+
+/* Other Rooms Section */
+.otherRoomsSection {
+  margin-top: 4rem;
+}
+
+.otherRoomsTitle {
+  font-size: 2rem;
+  font-family: var(--font-serif);
+  color: var(--color-primary);
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.otherRoomsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 2rem;
+}
+
+.otherRoomCard {
+  background-color: var(--color-white);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  border: 1px solid var(--color-border);
+  box-shadow: var(--shadow-sm);
+}
+
+.otherRoomImg {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.otherRoomBody {
+  padding: 1.5rem;
+}
+
+.otherRoomBody h3 {
+  font-size: 1.35rem;
+  font-family: var(--font-serif);
+  color: var(--color-primary);
+  margin-bottom: 0.5rem;
+}
+
+.otherRoomBody p {
+  color: var(--color-text-light);
+  font-size: 0.88rem;
+  margin-bottom: 1.25rem;
+}
+
+.otherRoomBottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 600;
+  color: var(--color-secondary);
+}
+
+@media (max-width: 992px) {
+  .detailGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .stickyBookingCard {
+    position: static;
+  }
+
+  .specsStrip {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

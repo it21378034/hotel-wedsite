@@ -1,0 +1,196 @@
+.pageHeader {
+  background: linear-gradient(135deg, var(--color-primary) 0%, #16423C 100%);
+  color: var(--color-white);
+  padding: 6rem 1.5rem 4rem;
+  text-align: center;
+}
+
+.breadcrumbs {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  font-size: 0.85rem;
+  color: rgba(255, 255, 255, 0.7);
+  margin-bottom: 1.5rem;
+}
+
+.breadcrumbs a {
+  color: #E2B98A;
+}
+
+.pageTitle {
+  font-size: clamp(2.25rem, 4.5vw, 3.5rem);
+  font-family: var(--font-serif);
+  margin: 1rem 0;
+  color: var(--color-white);
+}
+
+.pageSubtitle {
+  max-width: 680px;
+  margin: 0 auto;
+  font-size: 1.1rem;
+  color: rgba(255, 255, 255, 0.85);
+  line-height: 1.7;
+}
+
+.mainSection {
+  background-color: var(--color-surface);
+}
+
+.offersGrid {
+  display: flex;
+  flex-direction: column;
+  gap: 3.5rem;
+}
+
+.offerCard {
+  background-color: var(--color-white);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  border: 1px solid var(--color-border);
+  box-shadow: var(--shadow-sm);
+  display: grid;
+  grid-template-columns: 460px 1fr;
+  transition: box-shadow var(--transition-normal);
+}
+
+.offerCard:hover {
+  box-shadow: var(--shadow-lg);
+}
+
+.imageCol {
+  position: relative;
+}
+
+.offerImg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.badgeRow {
+  position: absolute;
+  top: 1.25rem;
+  left: 1.25rem;
+  display: flex;
+  gap: 0.5rem;
+}
+
+.discountBadge {
+  background-color: var(--color-accent);
+  color: var(--color-white);
+  padding: 0.35rem 0.85rem;
+  border-radius: var(--radius-full);
+  font-size: 0.85rem;
+  font-weight: 700;
+}
+
+.durationBadge {
+  background-color: rgba(26, 26, 46, 0.85);
+  color: var(--color-white);
+  padding: 0.35rem 0.85rem;
+  border-radius: var(--radius-full);
+  font-size: 0.85rem;
+}
+
+.infoCol {
+  padding: 2.5rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.offerTitle {
+  font-size: 1.95rem;
+  font-family: var(--font-serif);
+  color: var(--color-primary);
+  margin-bottom: 1rem;
+}
+
+.offerDesc {
+  color: var(--color-text-light);
+  font-size: 0.95rem;
+  line-height: 1.7;
+  margin-bottom: 1.5rem;
+}
+
+.inclusionsBox {
+  background-color: var(--color-surface);
+  padding: 1.25rem 1.5rem;
+  border-radius: var(--radius-sm);
+  margin-bottom: 2rem;
+}
+
+.inclusionsBox strong {
+  display: block;
+  font-size: 0.88rem;
+  color: var(--color-primary);
+  margin-bottom: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.inclusionsBox ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.5rem;
+  font-size: 0.88rem;
+  color: var(--color-text);
+}
+
+.priceFooter {
+  margin-top: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  border-top: 1px solid var(--color-border);
+  padding-top: 1.5rem;
+}
+
+.priceWrap {
+  display: flex;
+  align-items: baseline;
+  gap: 0.5rem;
+}
+
+.origPrice {
+  text-decoration: line-through;
+  color: var(--color-text-light);
+  font-size: 1.1rem;
+}
+
+.salePrice {
+  font-size: 2rem;
+  font-family: var(--font-serif);
+  color: var(--color-secondary);
+}
+
+.perPackage {
+  font-size: 0.85rem;
+  color: var(--color-text-light);
+}
+
+.validUntil {
+  display: block;
+  font-size: 0.8rem;
+  color: var(--color-text-light);
+  margin-top: 0.25rem;
+}
+
+@media (max-width: 992px) {
+  .offerCard {
+    grid-template-columns: 1fr;
+  }
+
+  .imageCol {
+    height: 280px;
+  }
+
+  .inclusionsBox ul {
+    grid-template-columns: 1fr;
+  }
+}

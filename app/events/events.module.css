@@ -1,0 +1,134 @@
+.pageHeader {
+  background: linear-gradient(135deg, var(--color-primary) 0%, #16423C 100%);
+  color: var(--color-white);
+  padding: 6rem 1.5rem 4rem;
+  text-align: center;
+}
+
+.breadcrumbs {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  font-size: 0.85rem;
+  color: rgba(255, 255, 255, 0.7);
+  margin-bottom: 1.5rem;
+}
+
+.breadcrumbs a {
+  color: #E2B98A;
+}
+
+.pageTitle {
+  font-size: clamp(2.25rem, 4.5vw, 3.5rem);
+  font-family: var(--font-serif);
+  margin: 1rem 0;
+  color: var(--color-white);
+}
+
+.pageSubtitle {
+  max-width: 680px;
+  margin: 0 auto;
+  font-size: 1.1rem;
+  color: rgba(255, 255, 255, 0.85);
+  line-height: 1.7;
+}
+
+.mainSection {
+  background-color: var(--color-surface);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  margin-bottom: 4rem;
+}
+
+.venueCard {
+  background-color: var(--color-white);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  border: 1px solid var(--color-border);
+  box-shadow: var(--shadow-sm);
+}
+
+.venueImg {
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+}
+
+.venueInfo {
+  padding: 2rem;
+}
+
+.venueInfo h2 {
+  font-size: 1.6rem;
+  font-family: var(--font-serif);
+  color: var(--color-primary);
+  margin: 0.75rem 0;
+}
+
+.venueInfo p {
+  color: var(--color-text-light);
+  line-height: 1.7;
+  margin: 0;
+}
+
+.formContainer {
+  background-color: var(--color-white);
+  padding: 3.5rem;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--color-border);
+  box-shadow: var(--shadow-sm);
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.formContainer h2 {
+  font-size: 2rem;
+  font-family: var(--font-serif);
+  color: var(--color-primary);
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+
+.formContainer p {
+  text-align: center;
+  color: var(--color-text-light);
+  margin-bottom: 2rem;
+}
+
+.eventForm {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.formRow {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.25rem;
+}
+
+.thankYou {
+  background-color: rgba(22, 66, 60, 0.1);
+  padding: 2.5rem;
+  border-radius: var(--radius-md);
+  text-align: center;
+  border: 1px solid var(--color-secondary);
+}
+
+@media (max-width: 768px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .formRow {
+    grid-template-columns: 1fr;
+  }
+
+  .formContainer {
+    padding: 2rem 1.5rem;
+  }
+}

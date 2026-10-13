@@ -1,0 +1,119 @@
+.pageHeader {
+  background: linear-gradient(135deg, var(--color-primary) 0%, #16423C 100%);
+  color: var(--color-white);
+  padding: 6rem 1.5rem 4rem;
+  text-align: center;
+}
+
+.breadcrumbs {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  font-size: 0.85rem;
+  color: rgba(255, 255, 255, 0.7);
+  margin-bottom: 1.5rem;
+}
+
+.breadcrumbs a {
+  color: #E2B98A;
+}
+
+.pageTitle {
+  font-size: clamp(2.25rem, 4.5vw, 3.5rem);
+  font-family: var(--font-serif);
+  margin: 1rem 0;
+  color: var(--color-white);
+}
+
+.pageSubtitle {
+  max-width: 680px;
+  margin: 0 auto;
+  font-size: 1.1rem;
+  color: rgba(255, 255, 255, 0.85);
+  line-height: 1.7;
+}
+
+.mainSection {
+  background-color: var(--color-surface);
+}
+
+.faqWrapper {
+  max-width: 840px;
+  margin: 0 auto 4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.faqCard {
+  background-color: var(--color-white);
+  border-radius: var(--radius-md);
+  border: 1px solid var(--color-border);
+  overflow: hidden;
+  box-shadow: var(--shadow-sm);
+  transition: all var(--transition-fast);
+}
+
+.cardOpen {
+  border-color: var(--color-accent);
+}
+
+.faqQuestion {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 2rem;
+  background: none;
+  border: none;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--color-primary);
+  cursor: pointer;
+  text-align: left;
+}
+
+.toggleIcon {
+  font-size: 1.5rem;
+  color: var(--color-accent);
+  margin-left: 1rem;
+}
+
+.faqAnswer {
+  padding: 0 2rem 1.75rem;
+  color: var(--color-text-light);
+  font-size: 0.98rem;
+  line-height: 1.75;
+}
+
+.faqAnswer p {
+  margin: 0;
+}
+
+.supportBox {
+  background: linear-gradient(135deg, var(--color-primary) 0%, #16423C 100%);
+  color: var(--color-white);
+  max-width: 840px;
+  margin: 0 auto;
+  padding: 3rem;
+  border-radius: var(--radius-md);
+  text-align: center;
+}
+
+.supportBox h3 {
+  font-family: var(--font-serif);
+  font-size: 1.85rem;
+  margin-bottom: 0.5rem;
+}
+
+.supportBox p {
+  color: rgba(255, 255, 255, 0.85);
+  margin-bottom: 2rem;
+}
+
+.supportCtas {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}

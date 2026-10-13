@@ -1,0 +1,163 @@
+.pageHeader {
+  background: linear-gradient(135deg, var(--color-primary) 0%, #16423C 100%);
+  color: var(--color-white);
+  padding: 6rem 1.5rem 4rem;
+  text-align: center;
+}
+
+.breadcrumbs {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  font-size: 0.85rem;
+  color: rgba(255, 255, 255, 0.7);
+  margin-bottom: 1.5rem;
+}
+
+.breadcrumbs a {
+  color: #E2B98A;
+}
+
+.pageTitle {
+  font-size: clamp(2.25rem, 4.5vw, 3.5rem);
+  font-family: var(--font-serif);
+  margin: 1rem 0;
+  color: var(--color-white);
+}
+
+.pageSubtitle {
+  max-width: 680px;
+  margin: 0 auto;
+  font-size: 1.1rem;
+  color: rgba(255, 255, 255, 0.85);
+  line-height: 1.7;
+}
+
+.mainSection {
+  background-color: var(--color-surface);
+}
+
+.contactGrid {
+  display: grid;
+  grid-template-columns: 1fr 380px;
+  gap: 3.5rem;
+  align-items: flex-start;
+}
+
+.formCard {
+  background-color: var(--color-white);
+  padding: 3rem;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--color-border);
+  box-shadow: var(--shadow-sm);
+}
+
+.cardHeading {
+  font-size: 1.85rem;
+  font-family: var(--font-serif);
+  color: var(--color-primary);
+  margin-bottom: 2rem;
+  border-bottom: 1px solid var(--color-border);
+  padding-bottom: 0.75rem;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.formRow {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.25rem;
+}
+
+.formGroup label {
+  display: block;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--color-primary);
+  margin-bottom: 0.4rem;
+}
+
+.successBox {
+  background-color: rgba(22, 66, 60, 0.1);
+  padding: 2.5rem;
+  border-radius: var(--radius-md);
+  text-align: center;
+  border: 1px solid var(--color-secondary);
+}
+
+.successBox h3 {
+  font-family: var(--font-serif);
+  color: var(--color-secondary);
+  font-size: 1.75rem;
+  margin-bottom: 0.5rem;
+}
+
+.successBox p {
+  color: var(--color-text);
+  margin: 0;
+}
+
+.infoAside {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.infoCard {
+  background-color: var(--color-white);
+  padding: 2rem;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--color-border);
+  box-shadow: var(--shadow-sm);
+}
+
+.infoCard h3 {
+  font-size: 1.25rem;
+  font-family: var(--font-serif);
+  color: var(--color-primary);
+  margin-bottom: 1.5rem;
+  border-bottom: 1px solid var(--color-border);
+  padding-bottom: 0.5rem;
+}
+
+.contactItem {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1.25rem;
+}
+
+.cIcon {
+  font-size: 1.35rem;
+}
+
+.contactItem strong {
+  display: block;
+  font-size: 0.9rem;
+  color: var(--color-primary);
+}
+
+.contactItem a,
+.contactItem p {
+  font-size: 0.9rem;
+  color: var(--color-text-light);
+  margin: 0.2rem 0 0;
+  line-height: 1.5;
+}
+
+.contactItem a:hover {
+  color: var(--color-accent);
+}
+
+@media (max-width: 992px) {
+  .contactGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .formRow {
+    grid-template-columns: 1fr;
+  }
+}

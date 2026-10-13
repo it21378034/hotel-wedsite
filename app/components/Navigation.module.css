@@ -1,0 +1,654 @@
+/* ═══════════════════════════════════════════════════
+   Enhanced Premium Navigation Styles
+   ═══════════════════════════════════════════════════ */
+
+/* Top Announcement & Concierge Ribbon */
+.topAnnouncementBar {
+  background-color: #121221;
+  color: var(--color-white);
+  font-size: 0.8rem;
+  padding: 0.45rem 1.5rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  position: relative;
+  z-index: 1001;
+}
+
+.announcementInner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.announcementLeft {
+  display: flex;
+  align-items: center;
+  gap: 0.85rem;
+}
+
+.goldBadge {
+  background: linear-gradient(135deg, #D4AF37 0%, #C8956C 100%);
+  color: #1a1a2e;
+  font-weight: 700;
+  font-size: 0.72rem;
+  padding: 0.15rem 0.6rem;
+  border-radius: var(--radius-full);
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.announcementText {
+  color: rgba(255, 255, 255, 0.82);
+}
+
+.announcementText strong {
+  color: #E2B98A;
+}
+
+.announcementRight {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.topContactLink,
+.topWhatsAppLink {
+  color: rgba(255, 255, 255, 0.8);
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+  transition: color var(--transition-fast);
+}
+
+.topContactLink:hover,
+.topWhatsAppLink:hover {
+  color: var(--color-white);
+}
+
+.topWhatsAppLink {
+  color: #4ADE80;
+}
+
+.langSelectorWrap {
+  position: relative;
+}
+
+.topLangSelect {
+  background: rgba(255, 255, 255, 0.1);
+  color: #fff;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 0.2rem 0.5rem;
+  border-radius: var(--radius-sm);
+  font-size: 0.75rem;
+  cursor: pointer;
+  outline: none;
+}
+
+.topLangSelect option {
+  background: #1a1a2e;
+  color: #fff;
+}
+
+/* Floating Glassmorphic Header */
+.header {
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  background: rgba(26, 26, 46, 0.85);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  transition: all 0.35s ease;
+}
+
+.header.scrolled {
+  background: rgba(20, 20, 36, 0.96);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+  border-bottom-color: rgba(200, 149, 108, 0.25);
+}
+
+.navContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 76px;
+  padding: 0 1.5rem;
+  transition: height 0.35s ease;
+}
+
+.header.scrolled .navContainer {
+  height: 66px;
+}
+
+/* Brand Logo */
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 0.85rem;
+  text-decoration: none;
+  flex-shrink: 0;
+}
+
+.logoIcon {
+  width: 44px;
+  height: 44px;
+  background: linear-gradient(135deg, rgba(200, 149, 108, 0.2) 0%, rgba(22, 66, 60, 0.3) 100%);
+  border: 1.5px solid var(--color-accent);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 15px rgba(200, 149, 108, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.logo:hover .logoIcon {
+  transform: rotate(5deg) scale(1.05);
+  box-shadow: 0 0 20px rgba(200, 149, 108, 0.4);
+}
+
+.crestMonogram {
+  font-family: var(--font-serif);
+  font-size: 1.2rem;
+  color: var(--color-accent);
+  font-weight: 700;
+  letter-spacing: 0.05em;
+}
+
+.logoText {
+  display: flex;
+  flex-direction: column;
+}
+
+.logoName {
+  font-family: var(--font-serif);
+  font-size: 1.25rem;
+  color: var(--color-white);
+  line-height: 1.1;
+  letter-spacing: 0.02em;
+}
+
+.logoTagline {
+  font-size: 0.68rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: #C8956C;
+  font-weight: 500;
+  margin-top: 0.15rem;
+}
+
+/* Desktop Navigation */
+.desktopNav {
+  display: flex;
+  align-items: center;
+}
+
+.navLinksList {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navLink {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.55rem 0.85rem;
+  color: rgba(255, 255, 255, 0.85);
+  font-size: 0.88rem;
+  font-weight: 500;
+  border-radius: var(--radius-sm);
+  text-decoration: none;
+  transition: color 0.25s ease, background-color 0.25s ease;
+  white-space: nowrap;
+}
+
+.navLink:hover {
+  color: var(--color-white);
+  background-color: rgba(255, 255, 255, 0.08);
+}
+
+.activeNavLink {
+  color: var(--color-white) !important;
+  background-color: rgba(200, 149, 108, 0.15);
+  font-weight: 600;
+}
+
+.activeNavLink::after {
+  content: '';
+  position: absolute;
+  bottom: 2px;
+  left: 20%;
+  right: 20%;
+  height: 2px;
+  background-color: var(--color-accent);
+  border-radius: 2px;
+}
+
+.navBadge {
+  background-color: #E63946;
+  color: #fff;
+  font-size: 0.65rem;
+  padding: 0.1rem 0.4rem;
+  border-radius: var(--radius-full);
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.dropdownChevron {
+  font-size: 0.75rem;
+  transition: transform 0.25s ease;
+}
+
+.chevronOpen {
+  transform: rotate(180deg);
+}
+
+/* Mega Dropdown */
+.dropdownParent {
+  position: relative;
+}
+
+.megaDropdown {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 480px;
+  background: rgba(22, 22, 38, 0.98);
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(200, 149, 108, 0.3);
+  border-radius: var(--radius-md);
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.45);
+  padding: 1.5rem;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(10px);
+  transition: all 0.25s ease;
+  pointer-events: none;
+}
+
+.dropdownVisible {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+
+.dropdownHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  padding-bottom: 0.85rem;
+  margin-bottom: 1rem;
+}
+
+.dropdownHeader h4 {
+  font-family: var(--font-serif);
+  color: var(--color-white);
+  font-size: 1.15rem;
+  margin: 0 0 0.2rem;
+}
+
+.dropdownHeader p {
+  font-size: 0.78rem;
+  color: rgba(255, 255, 255, 0.65);
+  margin: 0;
+}
+
+.viewAllRoomsLink {
+  font-size: 0.82rem;
+  color: var(--color-accent);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.dropdownGrid {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.dropdownRoomItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.65rem 0.85rem;
+  border-radius: var(--radius-sm);
+  background-color: rgba(255, 255, 255, 0.04);
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+.dropdownRoomItem:hover {
+  background-color: rgba(200, 149, 108, 0.15);
+  transform: translateX(4px);
+}
+
+.dropdownRoomInfo strong {
+  display: block;
+  font-size: 0.92rem;
+  color: var(--color-white);
+}
+
+.dropdownRoomInfo span {
+  font-size: 0.78rem;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.dropdownRoomPrice {
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: var(--color-accent);
+}
+
+/* Right Navigation Action */
+.navActions {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.bookCtaBtn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.45rem;
+  background-color: var(--color-accent);
+  color: #1a1a2e;
+  font-size: 0.88rem;
+  font-weight: 700;
+  padding: 0.55rem 1.25rem;
+  border-radius: var(--radius-full);
+  text-decoration: none;
+  white-space: nowrap;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  border: 1.5px solid #E2B98A;
+  box-shadow: 0 2px 12px rgba(200, 149, 108, 0.4);
+  transition: all 0.25s ease;
+  flex-shrink: 0;
+}
+
+.bookCtaBtn:hover {
+  background-color: #E2B98A;
+  color: #1a1a2e;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 18px rgba(200, 149, 108, 0.6);
+}
+
+.btnIcon {
+  font-size: 0.75rem;
+  color: #1a1a2e;
+}
+
+/* Hamburger Button */
+.hamburgerBtn {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  gap: 6px;
+  width: 38px;
+  height: 38px;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: var(--radius-sm);
+  padding: 8px;
+  cursor: pointer;
+}
+
+.bar {
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: var(--color-white);
+  border-radius: 2px;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.hamburgerActive .bar:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+}
+
+.hamburgerActive .bar:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburgerActive .bar:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
+}
+
+/* Mobile Drawer */
+.mobileDrawer {
+  position: fixed;
+  inset: 0;
+  z-index: 2000;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+}
+
+.drawerBackdrop {
+  position: absolute;
+  inset: 0;
+  background: rgba(10, 10, 20, 0.7);
+  backdrop-filter: blur(6px);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.drawerPanel {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 85%;
+  max-width: 400px;
+  height: 100%;
+  background: #161628;
+  border-left: 1px solid rgba(200, 149, 108, 0.3);
+  display: flex;
+  flex-direction: column;
+  transform: translateX(100%);
+  transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+  box-shadow: -10px 0 30px rgba(0, 0, 0, 0.5);
+}
+
+.drawerOpen {
+  pointer-events: auto;
+}
+
+.drawerOpen .drawerBackdrop {
+  opacity: 1;
+}
+
+.drawerOpen .drawerPanel {
+  transform: translateX(0);
+}
+
+.drawerHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.drawerLogo {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.drawerLogo strong {
+  display: block;
+  font-family: var(--font-serif);
+  font-size: 1.1rem;
+  color: var(--color-white);
+}
+
+.drawerLogo small {
+  color: var(--color-accent);
+  font-size: 0.7rem;
+  text-transform: uppercase;
+}
+
+.drawerCloseBtn {
+  background: rgba(255, 255, 255, 0.1);
+  border: none;
+  color: var(--color-white);
+  width: 32px;
+  height: 32px;
+  border-radius: var(--radius-full);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.drawerScrollArea {
+  padding: 1.5rem;
+  overflow-y: auto;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.drawerLinksList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.drawerLink {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.85rem 1rem;
+  border-radius: var(--radius-sm);
+  color: rgba(255, 255, 255, 0.85);
+  text-decoration: none;
+  font-size: 1.05rem;
+  transition: all 0.2s ease;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.04);
+}
+
+.drawerLink:hover,
+.drawerActiveLink {
+  background-color: rgba(200, 149, 108, 0.15);
+  color: var(--color-white);
+}
+
+.drawerActiveLink {
+  border-left: 3px solid var(--color-accent);
+}
+
+.drawerBadge {
+  background-color: #E63946;
+  color: #fff;
+  font-size: 0.65rem;
+  padding: 0.15rem 0.5rem;
+  border-radius: var(--radius-full);
+  font-weight: 700;
+  margin-left: auto;
+  margin-right: 0.75rem;
+}
+
+.drawerArrow {
+  color: rgba(255, 255, 255, 0.4);
+  font-size: 1rem;
+}
+
+.drawerHighlightBox {
+  background: rgba(200, 149, 108, 0.1);
+  border: 1px dashed var(--color-accent);
+  padding: 1rem;
+  border-radius: var(--radius-md);
+  font-size: 0.85rem;
+}
+
+.drawerHighlightBox h4 {
+  font-size: 0.95rem;
+  color: #E2B98A;
+  margin: 0 0 0.5rem;
+}
+
+.drawerHighlightBox p {
+  color: rgba(255, 255, 255, 0.8);
+  margin: 0.25rem 0;
+}
+
+.drawerCtaWrap {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.drawerBookBtn {
+  background: var(--color-accent);
+  color: var(--color-white);
+  text-align: center;
+  padding: 0.85rem;
+  border-radius: var(--radius-full);
+  font-weight: 600;
+  text-decoration: none;
+  box-shadow: 0 4px 15px rgba(200, 149, 108, 0.4);
+}
+
+.drawerWhatsAppBtn {
+  background: rgba(37, 211, 102, 0.15);
+  border: 1px solid #25D366;
+  color: #4ADE80;
+  text-align: center;
+  padding: 0.75rem;
+  border-radius: var(--radius-full);
+  font-size: 0.88rem;
+  text-decoration: none;
+}
+
+.drawerFooterInfo {
+  margin-top: auto;
+  padding-top: 1rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  font-size: 0.8rem;
+  color: rgba(255, 255, 255, 0.55);
+}
+
+.drawerFooterInfo p {
+  margin: 0.25rem 0;
+}
+
+/* Responsive Breakpoints */
+@media (max-width: 1180px) {
+  .desktopNav {
+    display: none;
+  }
+
+  .hamburgerBtn {
+    display: flex;
+  }
+}
+
+@media (max-width: 768px) {
+  .topAnnouncementBar {
+    display: none;
+  }
+
+  .logoTagline {
+    display: none;
+  }
+
+  .bookCtaBtn {
+    padding: 0.45rem 0.85rem;
+    font-size: 0.78rem;
+  }
+}

@@ -1,0 +1,95 @@
+.postHeader {
+  background: linear-gradient(135deg, var(--color-primary) 0%, #16423C 100%);
+  color: var(--color-white);
+  padding: 6rem 1.5rem 4rem;
+  text-align: center;
+}
+
+.breadcrumbs {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  font-size: 0.85rem;
+  color: rgba(255, 255, 255, 0.7);
+  margin-bottom: 1.5rem;
+}
+
+.breadcrumbs a {
+  color: #E2B98A;
+}
+
+.postTitle {
+  font-size: clamp(2.25rem, 4.5vw, 3.25rem);
+  font-family: var(--font-serif);
+  margin: 1rem 0;
+  color: var(--color-white);
+  max-width: 850px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.postMeta {
+  color: rgba(255, 255, 255, 0.75);
+  font-size: 0.9rem;
+}
+
+.postContainer {
+  max-width: 840px;
+  margin: -2rem auto 5rem;
+  position: relative;
+  z-index: 2;
+}
+
+.heroImgWrapper {
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  box-shadow: var(--shadow-lg);
+  margin-bottom: 3rem;
+}
+
+.heroImg {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.postContent {
+  background-color: var(--color-white);
+  padding: 3rem;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--color-border);
+  box-shadow: var(--shadow-sm);
+  color: var(--color-text);
+  line-height: 1.85;
+  font-size: 1.05rem;
+}
+
+.postContent h3 {
+  font-size: 1.45rem;
+  font-family: var(--font-serif);
+  color: var(--color-primary);
+  margin: 2rem 0 0.75rem;
+}
+
+.postCta {
+  margin-top: 3.5rem;
+  background: linear-gradient(135deg, var(--color-primary) 0%, #16423C 100%);
+  color: var(--color-white);
+  padding: 3rem;
+  border-radius: var(--radius-md);
+  text-align: center;
+}
+
+.postCta h3 {
+  font-family: var(--font-serif);
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.postCta p {
+  color: rgba(255, 255, 255, 0.85);
+  margin-bottom: 2rem;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
